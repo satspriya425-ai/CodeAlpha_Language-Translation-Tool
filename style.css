@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #0f172a;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    resize: vertical;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #0f172a;
+    background: #f8fafc;
+    outline: none;
+    transition: 0.2s;
+}
+
+textarea:focus {
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+.input-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+#statusMessage {
+    font-weight: 500;
+}
+
+/* Language selection */
+
+.language-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.language-box {
+    flex: 1;
+}
+
+.language-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #475569;
+}
+
+.language-box select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* General buttons */
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Swap button */
+
+.swap-button {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: 0.2s;
+}
+
+.swap-button:hover {
+    background: #dbeafe;
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+/* Translate button */
+
+.translate-button {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.translate-button:hover {
+    background: #1d4ed8;
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.translate-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Translation heading */
+
+h2 {
+    margin: 25px 0 10px;
+}
+
+/* Copy and Speak buttons */
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+.secondary-button {
+    background: #f8fafc;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.secondary-button:hover {
+    background: #e2e8f0;
+    opacity: 1;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .language-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .swap-button {
+        align-self: center;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+#clearButton:hover {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+#translatedText {
+    background: #f8fafc;
+}
