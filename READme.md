@@ -1,6 +1,6 @@
 # 🌐 Language Translation Tool
 
-A simple and user-friendly web-based language translation application built using HTML, CSS, and JavaScript.
+A simple and user-friendly web-based language translation tool built using HTML, CSS, JavaScript, and the LibreTranslate API.
 
 The application uses the LibreTranslate API to translate text between multiple languages and provides additional features such as automatic language detection, text-to-speech, copying translations, and swapping languages.
 
