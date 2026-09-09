@@ -196,22 +196,61 @@ h2 {
 
 @media (max-width: 600px) {
 
+    body {
+        padding: 15px 10px;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+        margin-bottom: 22px;
+    }
+
+    textarea {
+        min-height: 140px;
+        font-size: 15px;
+    }
+
     .language-section {
         flex-direction: column;
         align-items: stretch;
+        gap: 12px;
+        margin: 20px 0;
+    }
+
+    .language-box {
+        width: 100%;
     }
 
     .swap-button {
         align-self: center;
     }
 
-    .button-group {
-        flex-direction: column;
+    .translate-button {
+        margin-top: 15px;
     }
 
-    .container {
-        width: 95%;
-        padding: 20px;
+    h2 {
+        font-size: 22px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+
+    .input-info {
+        font-size: 12px;
     }
 }
 

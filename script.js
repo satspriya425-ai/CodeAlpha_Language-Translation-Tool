@@ -57,7 +57,7 @@ translateButton.addEventListener("click", async function() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:5000/translate",
+            "https://language-translation-api-ovb1.onrender.com/translate",
             {
                 method: "POST",
 
